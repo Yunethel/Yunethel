@@ -1,0 +1,213 @@
+<html>
+<head>
+<title> Home</title>
+<link rel="stylesheet" href="cssfinalproject.css">
+<script>
+        function validate_form() {
+           
+            var x = document.forms["apply"]["fullname"].value;
+            if (x == "") {
+                alert("Please enter your name");
+                return false;
+            }
+
+          
+            var y = document.forms["apply"]["email"].value;
+            if (y == "") {
+                alert("Please enter your email address");
+                return false;
+            }
+
+            
+            var z = document.forms["apply"]["age"].value;
+            if (z == "") {
+                alert("Please enter your age");
+                return false;
+            }
+
+           
+            var genderRadios = document.querySelectorAll('input[name="gender"]');
+            var genderSelected = false;
+            for (var radio of genderRadios) {
+                if (radio.checked) {
+                    genderSelected = true;
+                    break;
+                }
+            }
+            if (!genderSelected) {
+                alert("Please select your gender.");
+                return false;
+            }
+
+            return true; 
+        }
+    </script>
+</head>
+
+
+<body>
+<header class="nav">
+<div class="tooltip-container"><!--NAVBAR STARTING--!>
+<div class="tooltip-button"><!--LOGO START--!>
+<img src="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\images\logoicon.png" alt="logo" width="100px" height="100px">
+</div>
+<div class="tooltip-text">Logo</div>
+</div><!--LOGO END--!>
+</ul>
+<ul class="nav">
+	<li><div class="tooltip-container">
+		<div class="tooltip-button">
+		<a href="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\ICT_Final_Project_Homepage_Official.html"><img src="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\images\homeicon.png" alt="Home" width="60px" height="60px"></a>
+		</div>
+		<div class="tooltip-text">Homepage</div>
+		</div>
+		</li>
+	<li><div class="tooltip-container">
+		<div class="tooltip-button">
+		<a href="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\ICT_finalproject_recipe_official.html"><img src="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\images\recipeicon.png" alt="Baking recipes" width="60px" height="60px"></a>
+		</div>
+		<div class="tooltip-text">Recipes</div>
+		</div>
+		</li>
+	<li><div class="tooltip-container">
+		<div class="tooltip-button">
+		<a href="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\ICT_Final_Project_ContactUs_Official.html"><img src="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\images\contactusicon.png" alt="Contact us" width="60px" height="60px"></a>
+		</div>
+		<div class="tooltip-text">Contact us</div>
+		</div>
+		</li>
+	<li><div class="tooltip-container">
+		<div class="tooltip-button">
+		<a href="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\ICT_Finalproject_Tools_Official.html"><img src="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\images\toolicon.png" alt="Contact us" width="60px" height="60px"></a>
+		</div>
+		<div class="tooltip-text">Tools</div>
+		</div>
+		</li>
+	<li><div class="tooltip-container">
+		<div class="tooltip-button">
+		<a href="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\ICT_Finalproject_videopage_official.html"><img src="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\images\videoicon.png" alt="Videos" width="60px" height="60px"></a>
+		</div>
+		<div class="tooltip-text">Videos</div>
+		</div>
+		</li>
+</ul>
+</header>
+Sign up now and get notified!<a href="#form">CLICK HERE.</a><br><br>
+Read about our founder<a href="#founder">CLICK HERE.</a>
+<h3>Welcome to Baking Beginners! <br> We are a company that provides baking recipes for people who are interested in baking. We provide services such as easy baking recipes, quick baking recipes for portions large and small, and many more. Thank you for visiting our website, and feel free to contact us for any inquiries.</h3>
+<h1>Recommended Recipes especially for you<3 :</h1>
+<h2>5-minutes Recipes to Try Out!</h2>
+<div class="container"> <!--first row of image showcases--!>
+	<div class="foodbox">
+	<a href="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\ICT_Final_Project_Recipepage_OBS.html">
+		<img src="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\images\scones.jpg">
+		<p>Original Butter Scones</p> <!-- must write p to add p function--!>
+	</a>
+	</div>
+	<div class="foodbox">
+	<a href="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\ICT_Final_Project_Recipepage_CCC.html">
+		<img src="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\images\chewy-cookie.jpg">
+		<p>Chocolate Chip Cookies</p>
+	</a>
+	</div>
+	<div class="foodbox">
+	<a href="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\ICT_Final_Project_Recipepage_CR.html">
+		<img src="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\images\cinnamon-roll.jpg">
+		<p>Cinnamon Roll</p>
+	</a>
+	</div>
+</div>
+<br>
+<h2>Challenging Recipes to Try!</h2>
+<div class="container"> <!--second row of image showcases--!>
+	<div class="foodbox">
+	<a href="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\ICT_Final_Project_Recipepage_CC.html">
+	<img src="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\images\cannoli.jpg">
+		<p>Custard Cannoli</p>
+	</a>
+	</div>
+	<div class="foodbox">
+	<a href="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\ICT_Final_Project_Recipepage_CE.html">
+	<img src="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\images\chocolate-eclair.jpg">
+		<p>Chocolate Eclair</p>
+	</a>
+	</div>
+	<div class="foodbox">
+	<a href="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\ICT_Final_Project_Recipepage_SM.html">
+	<img src="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\images\French-macarons.jpg">
+		<p>Strawberry Macarons</p>
+	</a>
+	</div>
+</div>
+<br>
+<h2>Most Liked Recipes</h2>
+<div class="container"> <!--third row of image showcases--!>
+	<div class="foodbox">
+	<a href="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\ICT_Final_Project_Recipepage_SSR.html">
+		<img src="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\images\strawberry-swissroll.jpg">
+		<p>Strawberry Swiss Roll</p>
+	</a>
+	</div>
+	<div class="foodbox">
+	<a href="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\ICT_Final_Project_Recipepage_SCC.html">
+		<img src="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\images\strawberry-shortcake-cupcakes.jpg">
+		<p>Strawberry Cream Cupcake</p>
+	</a>
+	</div>
+	<div class="foodbox">
+	<a href="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\ICT_Final_Project_Recipepage_CS.html">
+		<img src="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\images\cheese-straws.jpg">
+		<p>Cheese Sticks</p>
+	</a>
+	</div>
+</div>
+<br>
+<h2><a id="form">Sign up now!</a></h2>
+    <div class="form-container">
+        <form class="form" name="apply" action="mailto:param.ranganath@stjosephkuching.edu.my" onsubmit="return (validate_form())">
+            <header>Sign Up</header>
+            <p>Join us to get notified for updates!</p>
+            <div class="input-box">
+                <label for="fullname">Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name. E.g John Wick" >
+            </div>
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email. E.g example@example.com">
+            </div>
+            <div class="input-box">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" min="1" max="100" placeholder="Enter your age">
+            </div>
+            <div class="radio-group">
+                <label>Gender:</label>
+                <input type="radio" id="gender_male" name="gender" value="Male">
+                <label for="gender_male">Male</label>
+                <input type="radio" id="gender_female" name="gender" value="Female">
+                <label for="gender_female">Female</label>
+                <input type="radio" id="gender_baker" name="gender" value="Baker!">
+                <label for="gender_baker">Baker!</label>
+                <input type="radio" id="gender_other" name="gender" value="Other">
+                <label for="gender_other">Other</label>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+<a id="founder">
+<h1>Our Very Very Great And Mighty Founder:</h1></a>
+<div class="founder">
+	<img src="C:\Users\Then Shann Yun\Desktop\ICT_Project_9.3\images\ownerimg.jpeg">
+	<div class="content"><h1 class="title">Owner Info</h1>
+	<p>	Dexter Lee, founder of Dextry Knows House(DKH), is an inspring young man who has an extreme passion for pastry making and sharing. He hoped to share his recipe with people all around the world so they could taste how delicious a pastry can be even after the recipe has gone through some changes.
+	Growing up, Dexter has always wanted to become a pastry maker, a baker; now, he has achieved multiple noble prizes for best pastry maker. <br><br>Lists of his achievements are:
+	 Noble Prize: Pro baker 2008, Noble Prize: Best Global Pastry Maker 2013, Gold Award for best culinary MEN 2013, Silver Award EUROPE pastry competition 2014
+	  and more. Being born in a wealthy family, Dexter knew that he had many privilages and took advantage of it to achieve his dream of becoming a top culinary student, a pastry maker, 
+	  a wonderful baker. <br><br>By the age of 29, he completed his goal, he made history as the baker who has the most culinary awards (50 Awards).
+	  He appeared in the GUINNES WORLD RECORD(2020) for his groundbreaking achievement. As he builds his team around the world, he developed this website to share recipes
+	  with people who are interested in baking (like YOU).</p>
+	</div>
+</div>
+
+</div>
+</body>
+</html>
